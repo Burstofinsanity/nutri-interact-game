@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Symbol_Editing_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 45.4 45.4" style="enable-background:new 0 0 45.4 45.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.25;}
+	.st1{fill:none;stroke:#000000;stroke-width:2.8346;stroke-miterlimit:10;}
+	.st2{fill:#2F9BFF;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2.8346;stroke-miterlimit:10;}
+	.st4{fill:url(#SVGID_1_);}
+	.st5{fill:#B2B4B7;}
+	.st6{fill:url(#SVGID_2_);}
+	.st7{fill:#2E9BFF;}
+</style>
+<g id="Bullet_6_-_Blue_1_">
+	<g>
+		<g>
+			<g class="st0">
+				<circle cx="23.7" cy="23.7" r="20.3"/>
+				<circle class="st1" cx="23.7" cy="23.7" r="20.3"/>
+			</g>
+			<g>
+				<circle class="st2" cx="21.7" cy="21.7" r="20.3"/>
+				<circle class="st3" cx="21.7" cy="21.7" r="20.3"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="15.2867" y1="6.512" x2="30.2795" y2="42.52">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="1" style="stop-color:#D4D6D7"/>
+				</linearGradient>
+				<path class="st4" d="M21.6,41.7c-11,0-20-9-20-20c0-11,9-20,20-20c11.1,0,20,9,20,20C41.6,32.7,32.7,41.7,21.6,41.7z"/>
+				<g>
+					<path class="st5" d="M21.6,1.9c10.9,0,19.8,8.9,19.8,19.8c0,10.9-8.9,19.8-19.8,19.8c-10.9,0-19.8-8.9-19.8-19.8
+						C1.8,10.8,10.7,1.9,21.6,1.9 M21.6,1.4c-11.2,0-20.3,9.1-20.3,20.3C1.3,32.9,10.4,42,21.6,42c11.2,0,20.3-9.1,20.3-20.3
+						C41.9,10.5,32.8,1.4,21.6,1.4L21.6,1.4z"/>
+				</g>
+			</g>
+			<g>
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="36.265" y1="39.9452" x2="12.3074" y2="10.1093">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="1" style="stop-color:#B8BABC"/>
+				</linearGradient>
+				<circle class="st6" cx="21.6" cy="21.7" r="17.5"/>
+			</g>
+			<g>
+				<circle class="st7" cx="21.6" cy="21.7" r="16.1"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

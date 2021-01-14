@@ -1,0 +1,573 @@
+@font-face {
+    font-family: HelveticaRounded;
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/HlvtcRndBd.otf");
+}
+
+
+@keyframes countDownRight{
+	0%{
+		opacity: 0;
+    	transform:scale(0) rotate(0deg);
+	}
+	25%{
+		opacity: 1;
+	}
+	50%{
+    	transform:scale(1.4) rotate(3deg);
+
+	}
+	75%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+    	transform:scale(1.6) rotate(6deg);
+	}
+}
+
+@keyframes countDownLeft{
+    0%{
+        opacity: 0;
+        transform:scale(0) rotate(0deg);
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        transform:scale(1.4) rotate(-3deg);
+
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform:scale(1.6) rotate(-6deg);
+    }
+}
+
+@keyframes in{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+@keyframes out{
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0);
+    }
+}
+
+@keyframes countDownLeft{
+    0%{
+        opacity: 0;
+        transform:scale(0) rotate(0deg);
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        transform:scale(1.4) rotate(-3deg);
+
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform:scale(1.6) rotate(-6deg);
+    }
+}
+
+@keyframes centerAni{
+    0%{fill: #0095DA}
+    50%{fill: #1274e1}
+    100%{fill: #0095DA}
+}
+
+@keyframes rotate360{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(359deg);}
+}
+@keyframes rotate360andDrop{
+    0%{transform:rotate(0deg);top:-5%;}
+    50%{transform:rotate(360deg);}
+    100%{transform:rotate(720deg);top:105%;}
+}
+
+
+@keyframes rotate360andDropR{
+    0%{transform:rotate(0deg);top:-5%;}
+    50%{transform:rotate(-360deg);}
+    100%{transform:rotate(-720deg);top:105%;}
+}
+
+
+*{
+    cursor: none;
+    color: #0095DA;
+    -webkit-transition:0.5s all;
+	transition:0.5s all;
+    z-index: 2;
+}
+
+html, body, .screen , #comeandjoin , #thefun , svg{width: 100%;height: 100%;}
+
+body{
+    margin:0px;
+	background: linear-gradient(to right,  rgba(0,139,208,1) 0%,rgba(0,139,208,0.3) 50%,rgba(0,139,208,1) 100%); /* W3C */
+}
+img {
+    width: 100%;
+}
+
+/* Start Screen */
+.screen{
+    display: none;
+    position: fixed;
+}
+
+ #small_nutriday{
+    position: absolute;
+    width: 300px;
+    margin-left: -150px;
+    left: 50%;
+    bottom: 200px;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    transform:scale(0);
+}
+
+ .screen_start #big_nutriday,.show#small_nutriday{
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    }
+
+#danone {
+    width: 200px;
+    bottom: 100px;
+    position: fixed;
+    margin-left: -100px;
+    z-index: 5;
+    left: 50%;
+    transition:all 0.3s;
+    transform:scale(0.75);
+    -webkit-transform:scale(0.75);
+}
+.screen_start #danone{
+    transform:scale(1);
+    -webkit-transform:scale(1);
+}
+
+
+/*Full Animation*/
+
+ #NutridaySays ,#nutridayhug , #hug ,#warmhug ,#button_message ,#thebutton ,  #shout_message,  #shout , #NutridaySays{
+    -webkit-animation: in 0.5s linear forwards;
+    animation: in 0.5s linear forwards;
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+}
+
+.game_1 #NutridaySays, 
+.game_2 #nutridayhug.love , .game_2 #hug, .game_2 #warmhug.love , 
+.game_3 #shout_message, .game_3 #shout,
+.game_4 #button_message , .game_4 #thebutton
+{
+    -webkit-animation-play-state: running; /* Chrome, Safari, Opera */
+    animation-play-state: running;
+}
+
+ .out #NutridaySays ,
+ .out #nutridayhug.love , 
+ .out #hug,
+ .out #warmhug.love,
+ .out #button_message,
+ .out #thebutton,  
+ .out #shout_message,  
+ .out #shout, 
+ .out #thefun,
+ .out #comeandjoin,
+ .out #big_nutriday,
+ .out #button_message,
+ .out #shout_message,
+ .out #NutridaySays,
+ .out #HopOneLeg.says, 
+ .out #TurnInACircle.says, 
+ .out #FunkyChicken.says,
+ .out #HighJump.says,
+ .out #FunnyFace.says,
+ .out #ShakeThatBum.says,
+ .out #HowLow.says,
+ .out #CrazyDance.says,
+ .out #HopOneLegSVG.says, 
+ .out #TurnInACircleSVG.says, 
+ .out #FunkyChickenSVG.says, 
+ .out #HighJumpSVG.says, 
+ .out #FunnyFaceSVG.says, 
+ .out #ShakeThatBumSVG.says, 
+ .out #HowLowSVG.says, 
+ .out #CrazyDanceSVG.says{
+    -webkit-animation: out 0.24s linear running forwards;
+    animation: out 0.24s linear running forwards;
+}
+
+
+.screen_start #screen_start{display: block;}
+
+ #comeandjoin svg ,  #thefun svg {
+    width: 660px;
+    margin-left: -330px;
+    left: 50%;
+    position: fixed;
+    height: 78px;
+    margin-top: -39px;
+    top: 43%;
+}
+ #thefun svg {
+    width: 380px;
+    margin-left: -190px;
+    top: 48%;
+}
+
+#comeandjoin , #thefun, #thebutton  , .out #comeandjoin , .out #thefun , .out #thebutton , .out #hug,{
+    transform:scale(0);
+    }
+.game_4 #thebutton{
+    transform:scale(1);
+}
+.screen_start #comeandjoin , .screen_start #thefun , .screen_start #big_nutriday{
+    transform:scale(0);
+    -webkit-animation: in 0.5s linear forwards;
+    animation: in 0.5s linear forwards;
+}
+#comeandjoin , #thefun{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    margin: 0px;
+    transform:scale(0);
+}
+
+#again,
+#ahhthatsnice,
+#nutridaylovesyoutoo,
+#ahhthatsanutridayhug,
+#youlovemethatmuch,
+#comesqueezeharder,
+#isthatallyougot,
+#youcallthatahug,
+#ouchsqueezed,
+#louder, 
+#icanthearyou,
+#sorrysayagain,
+#faster, 
+#slowDown, 
+#Whoho, 
+#amazing,
+#thereyougo,
+#welldone,
+#Whooohoo,
+#youareamazing,
+#thatwasgreat,
+#wigel,#wigelwigel,#isthatallyougot_1
+,#comeon
+,#youcandoit,#yougotthis{
+    width: 800px;
+    height: 150px;
+    margin-left: -400px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform:scale(0);
+}
+
+#icanthearyou, 
+#sorrysayagain,
+#slowDown, 
+#Whoho, 
+#thatwasgreat,
+#ahhthatsnice,
+#nutridaylovesyoutoo,
+#ahhthatsanutridayhug,
+#youlovemethatmuch,
+#comesqueezeharder,
+#isthatallyougot,
+#youcallthatahug,
+#ouchsqueezed,
+#screen_start .nutriday,#wigelwigel,#isthatallyougot_1
+,#comeon
+,#youcandoit,#yougotthis
+{
+    width: 600px;
+    margin-left: -300px;
+}
+
+
+
+
+
+/*Nutriday says Game CSS*/
+.game_1 #screen_1,.game_2 #screen_2,.game_3 #screen_3,.game_4 #screen_4{display: block;}
+
+
+#button_message,#shout_message,#NutridaySays,#HopOneLeg, #TurnInACircle , #FunkyChicken,
+#HighJump,
+#FunnyFace,
+#ShakeThatBum,
+#HowLow,
+#CrazyDance{
+    height: 136px;
+    width: 900px;
+    position: fixed;
+    left: 50%;
+    margin-left: -450px;
+    top: 22%;
+    margin-top: -128px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    transform:scale(0);
+
+}
+
+
+#shout_message, #button_message {
+    top: 25%;
+}
+
+#NutridaySays {
+    top: 15%;
+}
+
+#HopOneLegSVG , #TurnInACircleSVG , #FunkyChickenSVG,
+#HighJumpSVG,
+#FunnyFaceSVG,
+#ShakeThatBumSVG,
+#HowLowSVG,
+#CrazyDanceSVG{
+    width: 900px;
+    height: 900px;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: -450px;
+    top: 50%;
+    position: fixed;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    transform:scale(0);
+}
+
+#HopOneLeg.says, 
+#HopOneLegSVG.says , 
+#TurnInACircle.says ,
+#TurnInACircleSVG.says ,
+#FunkyChicken.says,
+#FunkyChickenSVG.says,
+#HighJump.says,
+#HighJumpSVG.says,
+#FunnyFace.says,
+#FunnyFaceSVG.says,
+#ShakeThatBum.says,
+#ShakeThatBumSVG.says,
+#HowLow.says,
+#HowLowSVG.says,
+#CrazyDance.says,
+#CrazyDanceSVG.says{
+    transform:scale(1);
+}
+
+/*Hug Nutriday Game CSS*/
+
+#hug{
+    width: 900px;
+    height: 600px;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: -300px;
+    top: 50%;
+    position: fixed;
+-webkit-transition:0.5s all;
+    transition:0.5s all;
+}
+
+#warmhug,
+#nutridayhug,
+#somelove,
+#givelove {
+    width: 900px;
+    height: 210px;
+    position: fixed;
+    left: 50%;
+    margin-left: -450px;
+    top: 20%;
+    margin-top: -128px;
+    -webkit-transition:0.5s all;
+    transition:0.5s all;
+    transform:scale(0);
+}
+
+#warmhug.love,
+#nutridayhug.love,
+#somelove.love,
+#givelove.love{
+    transform:scale(1);
+}
+/*Shout Nutriday Game CSS*/
+
+#shout{
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    top: 50%;
+    position: fixed;
+-webkit-transition:0.5s all;
+    transition:0.5s all;
+}
+
+
+
+
+
+#thatstooloud{
+    width: 600px;
+    height: 150px;
+    margin-left: -300px;
+    margin-top: -75px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform:scale(0);
+}
+
+
+#thatstooloud.louder{
+    animation:countDownRight 1s linear forwards 1;
+}
+
+/*Button Game CSS*/
+
+
+#thebutton{
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    top: 50%;
+    position: fixed;
+    -webkit-transition:0.5s all;
+	transition:0.5s all;
+}
+
+
+
+
+svg>g{width: 100%;}
+
+#areYouReady_1, #areYouReady_2{height: 92px;
+    width: 640px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    transform:scale(0);
+    margin-top: -46px;}
+
+.num{
+    width: 300px;
+    height: 300px;
+    margin: -150px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:scale(0);
+    animation:countDownRight 1s linear forwards 1;
+}
+
+
+#screen_start .nutriday {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+}
+
+.num svg{margin-left: -15px;}
+#no5{animation-delay:5.2s;}
+#no4{animation-name:countDownLeft;animation-delay:5.8s;}
+#no3{animation-delay:6.4s;}
+#no2{animation-name:countDownLeft;animation-delay:7.1s;}
+#no1{animation-delay:7.8s;}
+#noGo{animation-delay:9s;}
+
+
+#circle_center{
+    animation: centerAni 2s infinite linear;
+}
+.fasterL{
+    animation:countDownLeft 0.5s linear forwards 1;
+}
+.fasterR{
+    animation:countDownRight 0.5s linear forwards 1;
+}
+
+.win{
+    animation:countDownRight 1.5s linear forwards 1;
+}
+
+#areYouReady_1.play, #areYouReady_2.play,
+#ahhthatsnice.hug,
+#ahhthatsanutridayhug.hug,
+#comesqueezeharder.hug,
+#youcallthatahug.hug{
+    animation:countDownLeft 2s linear forwards 1;
+}
+
+#again.again{
+    animation:countDownRight 0.5s linear forwards 1;
+}
+#nutridaylovesyoutoo.hug,
+#youlovemethatmuch.hug,
+#isthatallyougot.hug,
+#ouchsqueezed.hug {
+    animation:countDownRight 2s linear forwards 1;
+}
+
+#strawberry{
+    margin: 0px;
+    position: fixed;
+    bottom: -5%;
+    z-index: 2;
+    width: 110%;
+    left: -5%;
+}
+
+#droppings{position: fixed;top:0px;left:0px;height: 100%;width: 100%;}
+
+.fruit1,.fruit2,.fruit3,.fruit4{
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/starberry_1.png");
+    z-index: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation:rotate360andDrop 7s linear forwards 1;}
+    .fruit2,.fruit4{
+    background-image: url("../img/starberry_2.png");
+    animation:rotate360andDropR 5s linear forwards 1;}
